@@ -20,8 +20,8 @@ Coded using Tailwind CSS.
 
 ### Screenshot
 
-![](./ss-qrdt.jpg)
-![](./ss-qrm.jpg)
+![](./ss-qrdt.png)
+![](./ss-qrm.png)
 
 
 ### Links
