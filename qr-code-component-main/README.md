@@ -10,8 +10,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -22,7 +20,8 @@ Coded using Tailwind CSS.
 
 ### Screenshot
 
-![](./ss-joqr.jpg)
+![](./ss-qrdt.jpg)
+![](./ss-qrm.jpg)
 
 
 ### Links
@@ -41,7 +40,9 @@ Coded using Tailwind CSS.
 
 ### What I learned
 
-hmmm
+- Setting up github and github page
+- Code directly in Codespace
+- Linked github remote repo to Visual Studio Code
 
 
 ## Acknowledgments
