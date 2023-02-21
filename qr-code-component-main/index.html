@@ -4,20 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | QR code component Jo version</title>
+  <title>Jo challenge – Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<style type="text/tailwindcss">
+  @layer base {
+  html {
+    font-family: Outfit, system-ui, sans-serif;
+  }
+  }
+</style>
+
 </head>
 <body>
 
- QR code here + CDN tailwind
+  <div class="overflow-hidden bg-white shadow sm:rounded-lg w-80">
+    <div class="px-4 py-5 sm:px-6">
+      <div><img src="images/image-qr-code.png"></div>
+      <h3>Improve your front-end skills by building projects</h3>
+      <p class="mt-1 max-w-2xl text-sm text-gray-500">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+  
 
 </body>
-</html>
+</html>  
