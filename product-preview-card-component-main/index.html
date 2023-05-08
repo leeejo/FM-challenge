@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500..700&family=Montserrat:wght@500..700&display=swap" />
+
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+
+  <style type="text/tailwindcss">
+    @layer base {
+        html {
+          font-family: "Montserrat", sans-serif;
+          color: #6c7289;
+        }
+
+        .font-franunces {
+          font-family: "Fraunces", sans-serif;
+        }
+      }
+    </style>
 </head>
-<body>
 
-  Preview
+<body class="grid place-content-center min-h-screen bg-[#F2EAE2]">
+  <main
+    class="grid grid-cols-2 max-w-[600px] m-4 mb-10 bg-white rounded-xl min-[620px]:max-h-[450px] max-[619px]:grid-cols-1">
+    <picture>
+      <source media="(min-width: 620px)" srcset="images/image-product-desktop.jpg" />
+      <source media="(max-width: 619px)" srcset="images/image-product-mobile.jpg" />
 
-  Gabrielle Essence Eau De Parfum
+      <img src="/images/image-product-desktop.jpg" width="100%" height="auto"
+        class="basic-80 rounded-l-xl max-[619px]:rounded-t-xl max-[619px]:rounded-b-none" />
+    </picture>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+    <div class="p-8 max-[619px]:p-6">
+      <h3 class="font-medium text-xs uppercase tracking-[5px] mb-5">
+        Perfume
+      </h3>
+      <h1 class="font-franunces leading-8 font-bold text-3xl mb-6 text-[#1C232B]">
+        Gabrielle Essence Eau De Parfum
+      </h1>
+      <p class="text-sm font-medium mb-7">
+        A floral, solar and voluptuous interpretation composed by Olivier
+        Polge, Perfumer-Creator for the House of CHANEL.
+      </p>
 
-  $149.99
-  $169.99
+      <div class="flex flex-row items-center mb-6">
+        <div class="mr-6">
+          <p class="font-franunces font-bold text-3xl text-[#3D8168]">
+            $149.99
+          </p>
+        </div>
+        <div class="">
+          <p class="line-through text-xs">$169.99</p>
+        </div>
+      </div>
 
-  Add to Cart
-  
+      <button class="p-4 bg-[#3D8168] text-white w-full rounded-lg hover:bg-[#1A4032] font-bold text-sm">
+        <span
+          class="before:content-[url('images/icon-cart.svg')] before:inline-block before:h-full before:align-middle before:mr-3">Add
+          to Cart</span>
+      </button>
+    </div>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub"
+      target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://www.frontendmentor.io/profile/leeejo">Jo Lee</a>.
   </div>
 </body>
+
 </html>
