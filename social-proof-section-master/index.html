@@ -1,102 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-    <title>Frontend Mentor | Social proof section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <style type="text/tailwindcss">
+    @layer base {
+        html {
+          font-family: 'League Spartan', sans-serif;
+        }
+        }
+  
+      @layer utilities {
+
+
+      .rating-item {
+        display: flex;
+        flex-direction: row;
+        background-color: #F7F2F7;
+        max-width: 445px;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
       }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+
+      .star {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        max-height: 1rem;
+        padding-right: 2rem;
       }
+
+      .testi-item {
+        display: flex;
+        flex-direction: column;
+        background-color: #512050;
+        max-width: 445px;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        color: white;
+      }
+
+
+    .bg {
+        background-image: url('images/bg-pattern-bottom-mobile.svg'), url('images/bg-pattern-top-mobile.svg');
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, auto;
+    }
+        /* Desktop styles */
+        @media (min-width: 640px) {
+
+    .bg {
+        background-image: url('images/bg-pattern-bottom-desktop.svg'), url('images/bg-pattern-top-desktop.svg');
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto, auto;
+            }
+        }
+    }
+
     </style>
 
-    <style type="text/tailwindcss">
-      @layer base {
-      html {
-        font-family: 'League Spartan', sans-serif;
-      }
-      }
-    </style>
-
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-         darkpurple: '#512051',
-         lightpurple: '#927B91'
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkpurple: '#512050',
+            lightpurple: '#927B91'
+          }
         }
       }
     }
-  }
-</script>
+  </script>
 
-  </head>
-  <body>
-    <h1 class="text-6xl darkpurple">10,000+ of our users love our products.</h1> 
+</head>
 
-    <p class="text-lg lightpurple">We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    <div class="flex">
-      <span class="star"><img src="images/icon-star.svg" alt="Rating stars"></span>
-      <span class="star"><img src="images/icon-star.svg" alt="Rating stars"></span>
-      <span class="star"><img src="images/icon-star.svg" alt="Rating stars"></span>
-      <span class="star"><img src="images/icon-star.svg" alt="Rating stars"></span>
-      <span class="star"><img src="images/icon-star.svg" alt="Rating stars"></span>
-      Rated 5 Stars in Reviews 
+<body class="bg">
+  <main class="flex justify-center">
+    <div class="max-w-[1110px] p-6 pt-20">
+
+<section class="left sm:w-[445px]">
+      <h1 class="text-6xl text-darkpurple text-center sm:text-left text-[40px] font-bold leading-8 tracking-tight mb-4">
+        10,000+ of our users love our products.</h1>
+
+      <p class="text-lg text-lightpurple text-center sm:text-left mb-10">We only provide great products combined with excellent
+        customer service.
+        See what our satisfied customers are saying about our services.</p>
+</section>
+
+<section class="right">
+      <div class="rating-box flex flex-col mb-16 gap-4 ">
+        <div class="rating-item">
+          <div class="star">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+          </div>
+          <p class="font-bold text-fuchsia">Rated 5 Stars in Reviews</p>
+        </div>
+
+        <div class="rating-item">
+          <div class="star">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+          </div>
+          <p class="font-bold text-fuchsia">Rated 5 Stars in Report Guru</p>
+        </div>
+
+        <div class="rating-item">
+          <div class="star">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+            <img src="images/icon-star.svg" alt="Rating stars">
+          </div>
+          <p class="font-bold text-fuchsia">Rated 5 Stars in BestTech</p>
+        </div>
+
+      </div>
+</section>
+
+<section>
+      <div class="testi-box flex flex-col mb-16 gap-4 ">
+        <div class="testi-item">
+          <div class="flex items-center space-x-6 mb-6">
+            <img src="images/image-colton.jpg" alt="Colton Smith" class="rounded-full h-10 w-10">
+
+              <div><h3 class="font-bold">Colton Smith</h3>
+
+              <p class="font-normal text-[#ED69A3]">Verified Buyer</p></div>
+            </div>
+        
+        <p class="font-medium">“ We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent! ”</p>
+        </div>
+
+
+        <div class="testi-item">
+          <div class="flex items-center space-x-6 mb-6">
+            <img src="images/image-irene.jpg" alt="Irene Roberts" class="rounded-full h-10 w-10">
+
+              <div><h3 class="font-bold">Irene Roberts</h3>
+
+              <p class="font-normal text-[#ED69A3]">Verified Buyer</p></div>
+            </div>
+          <p class="font-medium">“ Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery. ”</p>
+        </div>
+      
+      
+        <div class="testi-item">
+          <div class="flex items-center space-x-6 mb-6">
+            <img src="images/image-anne.jpg" alt="Anne Wallace" class="rounded-full h-10 w-10">
+
+              <div><h3 class="font-bold">Anne Wallace</h3>
+
+              <p class="font-normal text-[#ED69A3]">Verified Buyer</p></div>
+            </div>
+            <p class="font-medium">“ Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone! ”</p>
+        </div>
+
+      </div>
     </div>
+  </section>  
 
-    <div>Rated 5 Stars in Report Guru </div>
-    <div>Rated 5 Stars in BestTech </div>
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+  </main>
 
-    <footer>
+  <footer>
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.frontendmentor.io/profile/leeejo" rel="noopener">Jo</a>.
+      <a href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA" target="_blank">Frontend
+        Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/leeejo" rel="noopener">Jo</a>.
     </div>
     <footer>
 
 
-  </body>
+</body>
+
 </html>
