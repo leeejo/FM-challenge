@@ -35,7 +35,6 @@ Want some support on the challenge? Join our Slack community and ask questions i
 ![](ss-m.jpg)
 
 
-
 ### Links
 
 - Solution URL: https://github.com/leeejo/FM-challenge/tree/FM-challenge-codespace/faq-accordion-card-main
