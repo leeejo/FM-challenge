@@ -12,7 +12,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
   - [What I learned](#what-i-learned)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 Coded using Tailwind CSS. Seek advise from ChatGPT.
