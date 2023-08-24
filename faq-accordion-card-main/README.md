@@ -31,8 +31,8 @@ Want some support on the challenge? Join our Slack community and ask questions i
 
 ### Screenshot
 
-![](./ss-d.png)
-![](./ss-m.png)
+![](./ss_d.png)
+![](./ss_m.png)
 
 
 ### Links
