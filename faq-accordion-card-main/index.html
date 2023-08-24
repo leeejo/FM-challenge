@@ -19,32 +19,22 @@
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-
   <style type="text/tailwindcss">
     @layer base {
       html {
         font-family: 'Kumbh Sans', sans-serif;
       }
+    }
+
+    @layer utilities {
+      .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
       .accordion-item {
         border-bottom: 1px solid rgb(229 231 235);
         padding: 1.25rem 0;
-      }
-
-      .accordion-item:last-child {
-        border-bottom: none;
-        padding: 1.25rem 0 0;
       }
 
       .accordion-title {
@@ -65,9 +55,14 @@
         line-height: 1rem;
       }
 
+      .accordion-icon {
+        transition: transform 150ms ease-in-out;
+
+      }
+
       .rotate-180 {
-            transform: rotate(180deg);
-            transition: transform 0.3s ease-in-out;
+            transform: rotate(-180deg);
+            transition: transform 150ms ease-in-out;
         }
 
       }
@@ -210,7 +205,7 @@
 
           if (title.classList.contains('text-black')) {
             title.classList.replace('text-black', 'text-gray-600'); // Replace a class if it exists
-            title.classList.remove('font-bold'); // Replace a class if it exists
+            title.classList.toggle('font-bold'); // Replace a class if it exists
 
           } else {
             title.classList.toggle('text-black'); // Add this line to toggle color
