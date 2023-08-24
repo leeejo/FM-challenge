@@ -33,14 +33,17 @@ Want some support on the challenge? Join our Slack community and ask questions i
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](ss-d.jpg)
+![](ss-m.jpg)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/leeejo/FM-challenge/tree/FM-challenge-codespace/faq-accordion-card-main
+- Live Site URL (javascrip): https://leeejo.github.io/FM-challenge/faq-accordion-card-main/
+- Live Site URL (pure css): https://leeejo.github.io/FM-challenge/faq-accordion-card-main/index-noscript.html
+
 
 
 ### Built with
@@ -59,6 +62,8 @@ Want some support on the challenge? Join our Slack community and ask questions i
 Use grids when you need to section things out without worrying it about them "moving" around or breaking the grid.
 CSS accordion is cool but too much css code to deal with.
 Adding the vector into the code is out of my knowledge.
+
+I am not able to do toggle (click on the same open content to toggle visibility) using pure css. If anyone knows how, please teach me.
 
 ## Acknowledgments
 
