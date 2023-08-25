@@ -8,3 +8,5 @@ This is a folder to host all my Frontend Mentor challenge solutions.
 4. Product preview card component
 5. Social proof section
 6. FAQ accordion card
+7. Equalizer landing page
+8. 
