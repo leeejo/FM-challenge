@@ -1,6 +1,7 @@
 # Frontend Mentor Challenge
 
-This is a folder to host all my Frontend Mentor challenge solutions.
+Links to all Frontend Mentor challenge I done.
+Frontend mentor profile: [Jo Lee](https://www.frontendmentor.io/profile/leeejo)
 
 1. [QR code component](https://leeejo.github.io/FM-challenge/qr-code-component-main/)
 2. [Order summary component](https://leeejo.github.io/FM-challenge/order-summary-component/)
