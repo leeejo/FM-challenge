@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
- 
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -19,40 +20,91 @@
   <style type="text/tailwindcss">
     @layer base {
       html {
-        font-family: 'IBM Plex Sans', sans-serif;      }
-    }
+        font-family: 'IBM Plex Sans', sans-serif; 
+        color: #191826;
+           }
+          }
     </style>
 
 </head>
-<body>
 
-  We make your music sound extraordinary.
+<body
+  class=" flex flex-col justify-center items-center bg-no-repeat bg-[0rem_-15rem] bg-[url('assets/bg-main-mobile.png')] sm:bg-[-20rem_-15rem] sm:bg-[url('assets/bg-main-tablet.png')] lg:bg-[url('assets/bg-main-desktop.png')] ">
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+  <div class="grid m-auto py-8 w-full sm:max-w-[1110px]">
 
-  Premium EQ
+    <header class="px-6">
+      
+      <div class="pt-6 pb-16 lg:pb-32"><a href="#"><img src="assets/logo.svg" alt="Eqalizer logo" /></a></div>
+    
+      <div class="flex flex-col gap-5 w-full ">
+        <h1 class="font-bold text-4xl leading-10 md:text-6xl lg:text-8xl w-full md:max-w-[520px] lg:max-w-[1015px]">We make your music sound
+          extraordinary.</h1>
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
+        <p class="text-base md:text-lg lg:text-xl w-full md:max-w-[520px] lg:max-w-[825px] ">A system audio equalizer specifically designed for Android and iOS. Freely tune
+          the way your music sounds with a professional grade parametric EQ & volume mixer. Control
+          bass, mids, treble, gain control, reverb, and more!</p>
+        </div>
+    </header>
 
-  $4 / month
+    <main class="mt-16">
 
-  iOS Download
-  Android Download
+      <section class="flex justify-end w-full">
+        <div class="flex flex-col gap-9 bg-[#FA7453] text-stone-50 px-9 py-12 rounded-xl w-full sm:max-w-[446px] sm:mr-24">
+          <!-- copy -->
+          <div>
+            <h2 class=" text-3xl font-bold mb-3">Premium EQ</h2>
 
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
+            <p class="text-lg font-normal">Get expert-level control with a robust equalizer, volume mixer, and spatial
+              audio.
+              Take
+              your listening experience to a whole new level and access all our incredible features!</p>
+          </div>
+
+          <!-- price -->
+          <div class="items-center gap-4 inline-flex">
+            <p class="text-[65px] font-bold ">$4</p>
+            <p class="text-xl font-normal">/ month</p>
+          </div>
+
+          <!-- cta -->
+          <div class="flex flex-col gap-4">
+            <button
+              class="before:content-[url('assets/icon-apple.svg')] before:mr-2 bg-gray-900 rounded-xl w-full p-4 text-lg font-bold leading-loose hover:bg-teal-300">iOS
+              Download</button>
+            <button
+              class="before:content-[url('assets/icon-android.svg')] before:mr-2 bg-stone-50 rounded-xl w-full p-4 text-gray-900 text-lg font-bold leading-loose hover:bg-orange-300">Android
+              Download</button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="mt-16 px-6">
+      <img src="assets/logo.svg" alt="Eqalizer logo" />
+
+      <p class="mt-6">All rights reserved &copy; Equalizer 2021</p>
+      <p>Have any problems? Contact us via social media or email us at <a class="font-bold"
+          href="mailto:equalizer@example.com" target="_blank" rel="noopener">equalizer@example.com</a></p>
+
+      <div class="flex flex-row gap-5 mt-16">
+        <a href="#" class="social-icon"><img src="assets/icon-facebook.svg" /> </a>
+        <a href="#" class="social-icon"><img src="assets/icon-instagram.svg" /> </a>
+        <a href="#" class="social-icon"><img src="assets/icon-twitter.svg" /></a>
+      </div>
+    </footer>
 
 
-
-    <p class="attribution text-center text-white">
-      Challenge by <a class="text-slate-300"
-        href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE" target="_blank"
-        rel="noopener">Frontend Mentor</a>. Coded by <a class="text-slate-300" href="https://www.frontendmentor.io/profile/leeejo" target="_blank"
-        rel="noopener">Jo</a>.
+    <p class="attribution text-center text-xs mt-20">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE" target="_blank"
+        rel="noopener">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/leeejo"
+        target="_blank" rel="noopener">Jo</a>.
     </p>
 
+  </div>
+
 </body>
+
 </html>
